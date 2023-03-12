@@ -30,22 +30,22 @@ export const clip = new HTMLClip({
   },
 });
 
-const animation1=38000;
-const effect1=47000;
+const animation1=11000;
+const effect1=15000;
 
 
-clip.addIncident(opacity(1,".audio-progress", 1500), 500);
+clip.addIncident(opacity(1,".audio-progress", 1500), 300);
 
-clip.addIncident(opacity(1,".box:nth-child(1)", 1000), 4000);
-clip.addIncident(opacity(1,".box:nth-child(2)", 1000), 5000);
-clip.addIncident(opacity(1,".box:nth-child(3)", 1000), 6000);
+clip.addIncident(opacity(1,".box:nth-child(1)", 500), 1800);
+clip.addIncident(opacity(1,".box:nth-child(2)", 500), 2300);
+clip.addIncident(opacity(1,".box:nth-child(3)", 500), 2800);
 
-clip.addIncident(opacity(1,".inc",1000),9000);
-clip.addIncident(leftMove("200%",".inc",1000),17000);
-clip.addIncident(opacity(1,".type",1000),20000);
-clip.addIncident(leftMove("200%",".type",1000),29000);
-clip.addIncident(opacity(1,".content",1000,"@stagger(0,2000)"),30000);
-clip.addIncident(opacity(1,".box .animated-class",1000),animation1);
+clip.addIncident(opacity(1,".inc",500),3500);
+clip.addIncident(leftMove("200%",".inc",500),5000);
+clip.addIncident(opacity(1,".type",500),6000);
+clip.addIncident(leftMove("200%",".type",500),8000);
+clip.addIncident(opacity(1,".content",500,"@stagger(0,1500)"),8500);
+clip.addIncident(opacity(1,".box .animated-class",500),animation1);
 
 
 clip.addIncident(opacity(1,".box:nth-child(3) .animation", 500), animation1);
